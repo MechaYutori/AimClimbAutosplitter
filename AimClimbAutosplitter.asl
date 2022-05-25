@@ -34,7 +34,6 @@ split
 {
 	if(settings["Split"])
 	{
-		//switch with vars.split somehow doesn't work
 		int split = vars.split;
 		switch (split)
 		{
