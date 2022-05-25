@@ -2,12 +2,6 @@ state("Aim Climb")
 {
 	uint room : "Aim Climb.exe", 0x825B38;
 	double music : "Aim Climb.exe", 0x825528, 0x8, 0xC0, 0x1E0;
-	/*try those pointer instead in case mucsic doesn't work
-	"Aim Climb.exe"+00825528 8 C0 1E0
-	"Aim Climb.exe"+00825528 8 C0 1F0
-	IGT stored on 
-	"Aim Climb.exe"+00825528 8 C0 D0
-	*/
 }
 
 
