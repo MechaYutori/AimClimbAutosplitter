@@ -1,2 +1,2 @@
 # AimClimbAutosplitter
-It is a autsplitter script for Aim Climb.
+Autsplitter script for Aim Climb.
