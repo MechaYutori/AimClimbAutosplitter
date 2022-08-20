@@ -1,7 +1,7 @@
 state("Aim Climb")
 {
-	uint room : "Aim Climb.exe", 0x875818;
-	double music : "Aim Climb.exe", 0x8751F0, 0x568, 0xF0, 0x160;
+	uint room : "Aim Climb.exe", 0x88E0C8;
+	double music : "Aim Climb.exe", 0x5CF9E0, 0x568, 0xF0, 0x160;
 }
 
 
