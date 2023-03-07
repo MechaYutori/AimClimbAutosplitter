@@ -1,7 +1,7 @@
 state("Aim Climb")
 {
-	uint room : "Aim Climb.exe", 0x88E0C8;
-	double music : "Aim Climb.exe", 0x0088DE60, 0x0, 0xA0, 0x170;
+	uint room : "Aim Climb.exe", 0xA10AEC;
+	double music : "Aim Climb.exe", 0x00A31910, 0x0, 0xA0, 0x170;
 }
 
 
@@ -15,8 +15,8 @@ startup
 start
 {
 	vars.split = 0; 
-	//room 16 is difficulty select, music 28 is no music 
-	if(current.music == 2022317 && current.room == 16)
+	//room 34 is difficulty select, music 28 is no music 
+	if(current.music == 2022317 && current.room == 34)
 	{
 		return true;
 	}
@@ -33,40 +33,40 @@ split
 		switch (split)
 		{
 			case 0:
-				//room 46 is 2-1
-				if(current.room == 48)
+				//room 4 is 2-1
+				if(current.room == 4)
 				{
 					vars.split += 1;
 					return true;
 				}
 				break;
 			case 1:
-				//room 2 is 3-1
-				if(current.room == 2)
+				//room 11 is 3-1
+				if(current.room == 11)
 				{
 					vars.split += 1;
 					return true;
 				}
 				break;
 			case 2:
-				//room 0 is 4-1
-				if(current.room == 0)
+				//room 18 is 4-1
+				if(current.room == 18)
 				{
 					vars.split += 1;
 					return true;
 				}
 				break;
 			case 3:
-				//room 34 is 5-1
-				if(current.room == 36)
+				//room 22 is 5-1
+				if(current.room == 22)
 				{
 					vars.split += 1;
 					return true;
 				}
 				break;
 			case 4:
-				//room 5 is 6-1
-				if(current.room == 5)
+				//room 26 is 6-1
+				if(current.room == 26)
 				{
 					vars.split += 1;
 					return true;
@@ -78,43 +78,43 @@ split
 		/*
 		-Rooms and musics list-
 		Room
-		Title: 46
-		Load: 1
-		Map Select: 17
-		Difficulty select: 16
-		nyatero: 31
-		click a gun: 4
-		1-1: 49
-		1-2: 7
-		1-3: 38
-		2-1: 48
-		2-2: 28
-		2-3: 34
-		2-4: 14
-		2-5: 42
-		2-6: 40
-		2-7: 6
-		3-1: 2
-		3-2: 3
-		3-3: 8
-		3-4: 26
-		3-5: 41
-		3-6: 9
-		3-7: 21
-		4-1: 0
-		4-2: 35
-		4-3: 27
-		4-4: 12
-		5-1: 36
-		5-2: 45
-		5-3: 44
-		5-4: 33
-		6-1: 5
-		6-2: 19
-		6-3: 39
-		6-4: 22
-		6-5(ED): 13
-		Ending: 37
+		Title: 31
+		Load: 32
+		Map Select: 33
+		Difficulty select: 34
+		nyatero: 40
+		click a gun: 39
+		1-1: 1
+		1-2: 2
+		1-3: 3
+		2-1: 4
+		2-2: 5
+		2-3: 6
+		2-4: 7
+		2-5: 8
+		2-6: 9
+		2-7: 10
+		3-1: 11
+		3-2: 12
+		3-3: 13
+		3-4: 14
+		3-5: 15
+		3-6: 16
+		3-7: 17
+		4-1: 18
+		4-2: 19
+		4-3: 20
+		4-4: 21
+		5-1: 22
+		5-2: 23
+		5-3: 24
+		5-4: 25
+		6-1: 26
+		6-2: 27
+		6-3: 28
+		6-4: 29
+		6-5(ED): 30
+		Ending: 41
 		Result: 43
 
 		Music
@@ -131,7 +131,7 @@ split
 	}
 	
 	//detect ending room
-	if(current.room == 37)
+	if(current.room == 41)
 	{
 		return true;
 	}
@@ -140,7 +140,7 @@ split
 reset
 {
 	//detect title room
-	if(current.room == 46)
+	if(current.room == 31)
 	{
 		return true;
 	}
