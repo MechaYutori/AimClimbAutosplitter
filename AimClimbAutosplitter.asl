@@ -1,7 +1,7 @@
 state("Aim Climb")
 {
-	uint room : "Aim Climb.exe", 0xA10AEC;
-	double music : "Aim Climb.exe", 0x00A31910, 0x0, 0xA0, 0x170;
+	uint room : "Aim Climb.exe", 0xA23384;
+	double music : "Aim Climb.exe", 0x00813390, 0x48, 0x10, 0x220, 0xF0;
 }
 
 
@@ -118,14 +118,14 @@ split
 		Result: 43
 
 		Music
-		Title: 10
-		Area1: 19
-		Area2: 14
-		Area3: 20
-		Area4: 35
+		Title: 11
+		Area1: 20
+		Area2: 15
+		Area3: 21
+		Area4: 36
 		Area5: 0
 		Area6: 3
-		Ending: 5
+		Ending: 6
 		No music: 2022317
 		*/
 	}
