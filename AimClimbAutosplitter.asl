@@ -1,7 +1,7 @@
 state("Aim Climb")
 {
-	uint room : "Aim Climb.exe", 0xA23384;
-	double music : "Aim Climb.exe", 0x00813390, 0x48, 0x10, 0x220, 0xF0;
+	uint room : "Aim Climb.exe", 0xDA1728;
+	uint music : "Aim Climb.exe", 0x00B91A50, 0x30, 0x180, 0x110;
 }
 
 
@@ -16,7 +16,7 @@ start
 {
 	vars.split = 0; 
 	//room 34 is difficulty select, music 28 is no music 
-	if(current.music == 2022317 && current.room == 34)
+	if(current.music == 0 && current.room == 34)
 	{
 		return true;
 	}
@@ -118,15 +118,15 @@ split
 		Result: 43
 
 		Music
-		Title: 11
-		Area1: 20
-		Area2: 15
-		Area3: 21
-		Area4: 36
-		Area5: 0
-		Area6: 3
-		Ending: 6
-		No music: 2022317
+		Title: 9
+		Area1: 1
+		Area2: 2
+		Area3: 3
+		Area4: 4
+		Area5: 5
+		Area6: 6
+		Ending: 2
+		No music: 0
 		*/
 	}
 	
