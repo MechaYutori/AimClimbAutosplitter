@@ -15,7 +15,7 @@ startup
 start
 {
 	vars.split = 0; 
-	//room 34 is difficulty select, music 28 is no music 
+	//room 34 is difficulty select, music 0 is no music 
 	if(current.music == 0 && current.room == 34)
 	{
 		return true;
